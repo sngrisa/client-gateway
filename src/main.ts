@@ -19,6 +19,8 @@ const Main = async () => {
 
   app.useGlobalFilters(new RpcCustomExceptionFilter())
 
+  console.log('First Version');
+
   await app.listen(envs.port);
 
   logger.log(`Gateway running on port ${envs.port}`);
